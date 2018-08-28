@@ -29,6 +29,8 @@ struct ThemeColor {
     case appTabSwipeBackground = 4
     case appViewBackground = 5
     case appSubviewBackground = 6
+    
+    // If you wanna add more color please add color name here.
 }
 
 extension DHColor {
@@ -46,11 +48,11 @@ extension DHColor {
             return ThemeColor(light: 0xF7F7F7, dark: 0x111111)
         case .appSubviewBackground:
             return ThemeColor(light: 0xFFFFFF, dark: 0x2B2B2B)
+            
+        // More colors you can add if you want here.
         }
     }
-    
     var color: UIColor{
-        
         return UIColor(hex6: ThemeManager.sharedThemeManager.isNightMode() ? themeColor.dark : themeColor.light)
     }
 }
