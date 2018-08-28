@@ -19,13 +19,10 @@ class SecondViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         self.view.backgroundColor = DHColor.appSubviewBackground.color
         self.titleLabel.textColor = DHColor.appText.color
         self.subTitleLabel.textColor = DHColor.appSubText.color
-        
     }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
