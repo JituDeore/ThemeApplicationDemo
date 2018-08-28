@@ -16,6 +16,7 @@ class FirstViewController: UIViewController {
     
     @IBAction func UpdateTheme(_ sender: Any) {
         ThemeManager.sharedThemeManager.toggleTheme()
+        updateTheme()
     }
     
     override func viewDidLoad() {
@@ -23,11 +24,15 @@ class FirstViewController: UIViewController {
         themeSwitch.setOn(ThemeManager.sharedThemeManager.isNightMode(), animated: false)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    func updateTheme() {
         self.view.backgroundColor = DHColor.appSubviewBackground.color
         self.titleLabel.textColor = DHColor.appText.color
         self.subTitleLabel.textColor = DHColor.appSubText.color
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        updateTheme()
     }
     
     override func didReceiveMemoryWarning() {
