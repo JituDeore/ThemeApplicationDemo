@@ -7,6 +7,7 @@
 //
 
 #import "ThirdViewController.h"
+#import "ThemeApplication-Swift.h"
 
 @interface ThirdViewController ()
 
@@ -16,8 +17,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
 }
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    self.view.backgroundColor = [DHColorHelper getColorWithDhColor:DHColorAppSubviewBackground];
+    self.titleLabel.textColor = [DHColorHelper getColorWithDhColor:DHColorAppText];
+    self.subTitleLabel.textColor = [DHColorHelper getColorWithDhColor:DHColorAppSubText];
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
