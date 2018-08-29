@@ -15,6 +15,7 @@
 		A71D474421355BCD000DA909 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A71D474221355BCD000DA909 /* LaunchScreen.storyboard */; };
 		A71D474C21355C17000DA909 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71D474B21355C17000DA909 /* ThemeManager.swift */; };
 		A71D474E21358050000DA909 /* UIColorClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71D474D21358050000DA909 /* UIColorClass.swift */; };
+		A73AC34B21366FC2006EE514 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A73AC34A21366FC2006EE514 /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,9 @@
 		A71D474521355BCD000DA909 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A71D474B21355C17000DA909 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		A71D474D21358050000DA909 /* UIColorClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorClass.swift; sourceTree = "<group>"; };
+		A73AC34821366FC2006EE514 /* ThemeApplication-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ThemeApplication-Bridging-Header.h"; sourceTree = "<group>"; };
+		A73AC34921366FC2006EE514 /* ThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		A73AC34A21366FC2006EE514 /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +67,15 @@
 				A71D473721355BCB000DA909 /* AppDelegate.swift */,
 				A71D473921355BCB000DA909 /* FirstViewController.swift */,
 				A71D473B21355BCB000DA909 /* SecondViewController.swift */,
+				A73AC34921366FC2006EE514 /* ThirdViewController.h */,
+				A73AC34A21366FC2006EE514 /* ThirdViewController.m */,
 				A71D473D21355BCB000DA909 /* Main.storyboard */,
 				A71D474021355BCD000DA909 /* Assets.xcassets */,
 				A71D474221355BCD000DA909 /* LaunchScreen.storyboard */,
 				A71D474521355BCD000DA909 /* Info.plist */,
 				A71D474B21355C17000DA909 /* ThemeManager.swift */,
 				A71D474D21358050000DA909 /* UIColorClass.swift */,
+				A73AC34821366FC2006EE514 /* ThemeApplication-Bridging-Header.h */,
 			);
 			path = ThemeApplication;
 			sourceTree = "<group>";
@@ -105,6 +112,7 @@
 				TargetAttributes = {
 					A71D473321355BCB000DA909 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -146,6 +154,7 @@
 			files = (
 				A71D474E21358050000DA909 /* UIColorClass.swift in Sources */,
 				A71D473C21355BCB000DA909 /* SecondViewController.swift in Sources */,
+				A73AC34B21366FC2006EE514 /* ThirdViewController.m in Sources */,
 				A71D473821355BCB000DA909 /* AppDelegate.swift in Sources */,
 				A71D473A21355BCB000DA909 /* FirstViewController.swift in Sources */,
 				A71D474C21355C17000DA909 /* ThemeManager.swift in Sources */,
@@ -292,6 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KZRGFF6PB7;
 				INFOPLIST_FILE = ThemeApplication/Info.plist;
@@ -301,6 +311,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.ThemeApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ThemeApplication/ThemeApplication-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,6 +322,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KZRGFF6PB7;
 				INFOPLIST_FILE = ThemeApplication/Info.plist;
@@ -319,6 +332,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.ThemeApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ThemeApplication/ThemeApplication-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
