@@ -11,8 +11,8 @@ import UIKit
 
 @objcMembers
 
-class DHColorHelper: NSObject {
-    class func getColor(dhColor: DHColor) -> UIColor {
+class JDColorHelper: NSObject {
+    class func getColor(dhColor: JDColor) -> UIColor {
         return dhColor.color
     }
 }
@@ -22,7 +22,7 @@ struct ThemeColor {
     let dark: UInt32
 }
 
-@objc enum DHColor : Int{
+@objc enum JDColor : Int{
     case appText  = 1
     case appSubText = 2
     case appTabBarBackground = 3
@@ -33,7 +33,7 @@ struct ThemeColor {
     // If you wanna add more color please add color name here.
 }
 
-extension DHColor {
+extension JDColor {
     private var themeColor: ThemeColor {
         switch self {
         case .appText:

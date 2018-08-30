@@ -24,9 +24,9 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
-    self.view.backgroundColor = [DHColorHelper getColorWithDhColor:DHColorAppSubviewBackground];
-    self.titleLabel.textColor = [DHColorHelper getColorWithDhColor:DHColorAppText];
-    self.subTitleLabel.textColor = [DHColorHelper getColorWithDhColor:DHColorAppSubText];
+    self.view.backgroundColor = [JDColorHelper getColorWithDhColor:DHColorAppSubviewBackground];
+    self.titleLabel.textColor = [JDColorHelper getColorWithDhColor:DHColorAppText];
+    self.subTitleLabel.textColor = [JDColorHelper getColorWithDhColor:DHColorAppSubText];
 }
 
 
