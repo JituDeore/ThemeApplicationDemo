@@ -24,11 +24,10 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
-    self.view.backgroundColor = [JDColorHelper getColorWithDhColor:DHColorAppSubviewBackground];
-    self.titleLabel.textColor = [JDColorHelper getColorWithDhColor:DHColorAppText];
-    self.subTitleLabel.textColor = [JDColorHelper getColorWithDhColor:DHColorAppSubText];
+    self.view.backgroundColor = [JDColorHelper getColorWithDhColor:JDColorAppSubviewBackground];
+    self.titleLabel.textColor = [JDColorHelper getColorWithDhColor:JDColorAppText];
+    self.subTitleLabel.textColor = [JDColorHelper getColorWithDhColor:JDColorAppSubText];
 }
-
 
 
 - (void)didReceiveMemoryWarning {
